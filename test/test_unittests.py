@@ -2,6 +2,8 @@ from arithmetic import addition, multiplication, division, remainder
 
 import unittest
 
+print("TestArithmetic tests")
+
 class TestArthimetic(unittest.TestCase):
 
     def test_add(self):
