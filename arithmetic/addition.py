@@ -1,5 +1,5 @@
 def add(arg1,arg2):
-    if not isinstance(arg1,list) and not isinstance(arg2,list):
-        return arg1+arg2
-    else:
-        raise ValueError("Argument values are of different type")
+    if isinstance(arg1,list) or isinstance(arg2,list):
+        raise ValueError("cannot add if either one of operand is list")
+
+    return arg1+arg2
